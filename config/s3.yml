@@ -1,0 +1,15 @@
+development:
+  bucket: photofriend
+  access_key_id: AKIAI3BUQJPHZV657VCA
+  secret_access_key: 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
+
+test:
+  bucket: photofriend
+  access_key_id: AKIAI3BUQJPHZV657VCA
+  secret_access_key: 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
+
+
+production:
+  bucket: photofriend
+  access_key_id: AKIAI3BUQJPHZV657VCA
+  secret_access_key: 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
