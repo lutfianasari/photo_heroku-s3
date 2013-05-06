@@ -1,18 +1,6 @@
 ShowPhotoS3::Application.routes.draw do
   resources :products
 
-  attr_accessible :name, :photo
-
-  has_attached_file :photo,
-   :styles => {
-   :thumb  => "100x100",
-   :medium => "200x200",
-   :large => "600x400"
- },
-   :storage => :s3,
-   :s3_credentials => File.join(Rails.root, 'config', 's3.yml'),
-   :path => ":attachment/:id/:style.:extension"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -62,7 +50,7 @@ ShowPhotoS3::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'products#index'
 
   # See how all your routes lay out with "rake routes"
 
